@@ -1,0 +1,29 @@
+<svg width="100%" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="eye-clip">
+      <path d="M60 200 Q130 100 200 96 Q270 100 340 200 Q270 300 200 304 Q130 300 60 200 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Almond eye — outer (darkest) -->
+  <path d="M60 200 Q130 100 200 96 Q270 100 340 200 Q270 300 200 304 Q130 300 60 200 Z" fill="#5c3a08"/>
+
+  <!-- Mid iris ring -->
+  <circle cx="200" cy="200" r="72" fill="#8a5c12"/>
+
+  <!-- Inner iris -->
+  <circle cx="200" cy="200" r="54" fill="#b07820"/>
+
+  <!-- Pupil -->
+  <circle cx="200" cy="200" r="30" fill="#5c3a08"/>
+
+  <!-- Diamond / truesight glyph in pupil -->
+  <polygon points="200,178 218,200 200,222 182,200" fill="#f0c060"/>
+
+  <!-- Inner tiny diamond (pupil center cutout) -->
+  <polygon points="200,190 208,200 200,210 192,200" fill="#5c3a08"/>
+
+  <!-- Glint highlights -->
+  <ellipse cx="216" cy="184" rx="7" ry="4.5" opacity="0.85" transform="rotate(-25,216,184)" fill="white"/>
+  <ellipse cx="178" cy="214" rx="3.5" ry="2" opacity="0.4" fill="white"/>
+</svg>

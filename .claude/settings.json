@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.dark.design)",
+      "WebFetch(domain:www.empathinterviews.com)",
+      "WebFetch(domain:twigspaper.com)",
+      "WebFetch(domain:land-book.com)",
+      "WebFetch(domain:pirsch.io)",
+      "WebFetch(domain:www.console.com)",
+      "WebFetch(domain:www.boobook.world)",
+      "WebFetch(domain:onverre.com)",
+      "Read(//c/Users/David Dalisay/empath-interview-prep/**)"
+    ]
+  }
+}

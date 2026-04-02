@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/David Dalisay/.claude/projects/c--Users-David-Dalisay-simple-data-services/memory/**)"
+    ]
+  }
+}
