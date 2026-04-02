@@ -5,7 +5,7 @@
     </clipPath>
   </defs>
 
-  <!-- Almond eye — outer (darkest) -->
+  <!-- Almond eye - outer (darkest) -->
   <path d="M60 200 Q130 100 200 96 Q270 100 340 200 Q270 300 200 304 Q130 300 60 200 Z" fill="#5c3a08"/>
 
   <!-- Mid iris ring -->

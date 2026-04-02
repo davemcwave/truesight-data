@@ -9,6 +9,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F4FRQ9SZVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-F4FRQ9SZVH');
+  </script>
 </head>
 <body>
 
@@ -24,7 +32,10 @@
       <a href="#why">Why Truesight</a>
       <a href="#about">About</a>
     </nav>
-    <a href="mailto:david@truesightdata.net" class="nav__cta">Get in touch</a>
+    <div class="nav__actions">
+      <a href="/contact" class="nav__cta">Get in touch</a>
+      <a href="/free-data-review" class="nav__cta nav__cta--primary">Get free data review</a>
+    </div>
   </header>
 
   <main>
@@ -35,7 +46,7 @@
         <p class="kicker">For businesses without a data team</p>
         <h1>Use your business data to know what's working.</h1>
         <p class="sub">Send me a question about your business - revenue, bookings, customers, marketing, ads, anything. I'll dig into your numbers and send back clear findings with actionable next steps.</p>
-        <a href="mailto:david@truesightdata.net" class="btn">Get your free dashboard</a>
+        <a href="/free-data-review" class="btn">Get your free data review</a>
         <p class="byline">David Dalisay &nbsp;·&nbsp; Data Engineer &nbsp;·&nbsp; 10 years experience</p>
       </div>
       <div class="hero__visual">
@@ -224,7 +235,7 @@
         </li>
         <li>
           <span class="n">02</span>
-          <strong>I do a free audit</strong>
+          <strong>I do a free data review</strong>
           <p>I look at what you have, what's missing, and what questions your data could actually answer. No cost, no commitment.</p>
         </li>
         <li>
@@ -251,8 +262,8 @@
           <div class="pricing-card__tier">Start Here</div>
           <div class="pricing-card__name">Free Intro</div>
           <div class="pricing-card__price">Free</div>
-          <p class="pricing-card__desc">Not sure where to start? Send me your data and I'll build you a free custom dashboard, then walk you through what it's telling you. No commitment.</p>
-          <a href="mailto:david@truesightdata.net" class="btn btn--outline pricing-card__cta">Get your free dashboard</a>
+          <p class="pricing-card__desc">Not sure where to start? Send me your data and I'll do a free data review - I'll look at what you have, tell you what it's saying, and show you what's possible. No commitment.</p>
+          <a href="/free-data-review" class="btn btn--outline pricing-card__cta">Get your free data review</a>
         </div>
 
         <div class="pricing-card">

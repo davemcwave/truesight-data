@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get in Touch · Truesight Data</title>
+  <link rel="icon" type="image/svg+xml" href="../truesight_icon_mark.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F4FRQ9SZVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-F4FRQ9SZVH');
+  </script>
+  <style>
+    .review-page { min-height: 100vh; display: flex; flex-direction: column; }
+    .review-main { max-width: 600px; margin: 0 auto; padding: 80px 48px; flex: 1; }
+    .review-kicker {
+      font-family: var(--mono); font-size: 11px; color: var(--accent);
+      letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 20px;
+    }
+    .review-main h1 { font-size: clamp(28px, 4vw, 40px); margin-bottom: 12px; }
+    .review-main .sub { margin-bottom: 48px; }
+    .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 24px; }
+    .form-group label {
+      font-family: var(--mono); font-size: 11px; color: var(--light);
+      text-transform: uppercase; letter-spacing: 0.06em;
+    }
+    .form-group input,
+    .form-group textarea {
+      background: #fff; border: 1px solid var(--line); border-radius: 8px;
+      padding: 14px 16px; font-family: var(--sans); font-size: 15px;
+      color: var(--text); transition: border-color 0.15s; width: 100%; resize: vertical;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus { outline: none; border-color: var(--accent); }
+    .form-group textarea { min-height: 120px; }
+    .form-submit { margin-top: 8px; }
+    @media (max-width: 600px) { .review-main { padding: 48px 24px; } }
+  </style>
+</head>
+<body class="review-page">
+
+  <header class="nav">
+    <a href="/" class="logo">
+      <img src="../truesight_icon_mark.svg" alt="" class="logo__mark" width="32" height="32">
+      Truesight Data
+    </a>
+    <a href="/free-data-review" class="nav__cta nav__cta--primary">Get free data review</a>
+  </header>
+
+  <main class="review-main">
+    <p class="review-kicker">No commitment</p>
+    <h1>Let's get to know each other.</h1>
+    <p class="sub">Not ready to dive in yet? That's totally fine. Tell me a bit about your business and what you're trying to figure out. I'll reach back out and we can take it from there.</p>
+
+    <form action="https://formspree.io/f/xjgpeerr" method="POST">
+      <input type="hidden" name="_next" value="/thanks" />
+      <div class="form-group">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="jane@yourbusiness.com" required />
+      </div>
+      <div class="form-group">
+        <label for="business">What kind of business do you run?</label>
+        <input type="text" id="business" name="business" placeholder="e.g. Coffee shop, salon, landscaping company" />
+      </div>
+      <div class="form-group">
+        <label for="message">What are you trying to figure out?</label>
+        <textarea id="message" name="message" placeholder="e.g. I'm not sure which of my services is most profitable, or why some months are way busier than others."></textarea>
+      </div>
+      <div class="form-submit">
+        <button type="submit" class="btn btn--full">Send message</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <span>Truesight · Data clarity for growing businesses</span>
+  </footer>
+
+</body>
+</html>

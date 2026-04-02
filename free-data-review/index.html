@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Data Review · Truesight Data</title>
+  <link rel="icon" type="image/svg+xml" href="../truesight_icon_mark.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F4FRQ9SZVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-F4FRQ9SZVH');
+  </script>
+  <style>
+    .review-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .review-main {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 80px 48px;
+      flex: 1;
+    }
+    .review-kicker {
+      font-family: var(--mono); font-size: 11px; color: var(--accent);
+      letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 20px;
+    }
+    .review-main h1 {
+      font-size: clamp(28px, 4vw, 40px);
+      margin-bottom: 12px;
+    }
+    .review-main .sub {
+      margin-bottom: 48px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 24px;
+    }
+    .form-group label {
+      font-family: var(--mono); font-size: 11px; color: var(--light);
+      text-transform: uppercase; letter-spacing: 0.06em;
+    }
+    .form-group input,
+    .form-group textarea {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px 16px;
+      font-family: var(--sans);
+      font-size: 15px;
+      color: var(--text);
+      transition: border-color 0.15s;
+      width: 100%;
+      resize: vertical;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+    .form-group textarea {
+      min-height: 140px;
+    }
+    .form-submit {
+      margin-top: 8px;
+    }
+    @media (max-width: 600px) {
+      .review-main { padding: 48px 24px; }
+    }
+  </style>
+</head>
+<body class="review-page">
+
+  <header class="nav">
+    <a href="/" class="logo">
+      <img src="../truesight_icon_mark.svg" alt="" class="logo__mark" width="32" height="32">
+      Truesight Data
+    </a>
+    <a href="mailto:david@truesightdata.net" class="nav__cta">Get in touch</a>
+  </header>
+
+  <main class="review-main">
+    <p class="review-kicker">Free · No commitment</p>
+    <h1>Get your free data review.</h1>
+    <p class="sub">Tell me a bit about your business and what you're trying to figure out. If you have specific data that you want me to review, mention that in the description. I'll take a look and get back to you with what I can see in your data - and what questions it could answer.</p>
+
+    <form action="https://formspree.io/f/xlgowwjz" method="POST">
+      <input type="hidden" name="_next" value="/thanks" />
+      <div class="form-group">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="jane@yourbusiness.com" required />
+      </div>
+      <div class="form-group">
+        <label for="message">What do you want to understand about your business?</label>
+        <textarea id="message" name="message" placeholder="e.g. I run a small café and I want to know which days are slowest and why. I have my Square sales history going back 2 years." required></textarea>
+      </div>
+      <div class="form-submit">
+        <button type="submit" class="btn btn--full">Send my request</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <span>Truesight · Data clarity for growing businesses</span>
+  </footer>
+
+</body>
+</html>

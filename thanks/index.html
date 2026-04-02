@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thanks · Truesight Data</title>
+  <link rel="icon" type="image/svg+xml" href="../truesight_icon_mark.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F4FRQ9SZVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-F4FRQ9SZVH');
+  </script>
+  <style>
+    .thanks-page { min-height: 100vh; display: flex; flex-direction: column; }
+    .thanks-main {
+      max-width: 600px; margin: 0 auto; padding: 80px 48px; flex: 1;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .thanks-kicker {
+      font-family: var(--mono); font-size: 11px; color: var(--accent);
+      letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 20px;
+    }
+    .thanks-main h1 { font-size: clamp(28px, 4vw, 40px); margin-bottom: 12px; }
+    .thanks-main .sub { margin-bottom: 36px; }
+    @media (max-width: 600px) { .thanks-main { padding: 48px 24px; } }
+  </style>
+</head>
+<body class="thanks-page">
+
+  <header class="nav">
+    <a href="/" class="logo">
+      <img src="../truesight_icon_mark.svg" alt="" class="logo__mark" width="32" height="32">
+      Truesight Data
+    </a>
+  </header>
+
+  <main class="thanks-main">
+    <p class="thanks-kicker">Got it</p>
+    <h1>You're all set.</h1>
+    <p class="sub">I'll review what you sent and get back to you soon. If you have any data to share in the meantime, feel free to email it to <a href="mailto:david@truesightdata.net" style="color:var(--accent)">david@truesightdata.net</a>.</p>
+    <a href="/" class="btn" style="align-self: flex-start;">Back to home</a>
+  </main>
+
+  <footer class="footer">
+    <span>Truesight · Data clarity for growing businesses</span>
+  </footer>
+
+</body>
+</html>
