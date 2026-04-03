@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Demo Dashboards · Truesight Data</title>
+  <link rel="icon" type="image/svg+xml" href="../truesight_icon_mark.svg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../styles.css"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F4FRQ9SZVH"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-F4FRQ9SZVH');</script>
+  <style>
+    .demos-main { max-width: 1280px; margin: 0 auto; padding: 80px 48px; }
+    .demos-main h1 { font-size: clamp(32px, 4vw, 52px); margin-bottom: 12px; }
+    .demos-main .sub { font-size: 17px; margin-bottom: 56px; max-width: 560px; }
+    .demo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .demo-card {
+      border: 1px solid var(--line); border-radius: 14px;
+      padding: 36px; background: #fff;
+      display: flex; flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .demo-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.08); }
+    .demo-card__type {
+      font-family: var(--mono); font-size: 11px; color: var(--accent);
+      text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px;
+    }
+    .demo-card h2 { font-size: 20px; color: var(--text); margin-bottom: 8px; letter-spacing: -0.3px; }
+    .demo-card__question {
+      font-size: 15px; color: var(--mid); font-style: italic;
+      margin-bottom: 16px; line-height: 1.5;
+    }
+    .demo-card__tags {
+      display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 28px; flex: 1;
+      align-content: flex-start;
+    }
+    .demo-card__tag {
+      font-family: var(--mono); font-size: 10px; text-transform: uppercase;
+      letter-spacing: 0.05em; padding: 3px 8px; border-radius: 4px;
+      background: var(--bg); border: 1px solid var(--line); color: var(--light);
+    }
+    @media (max-width: 900px) { .demo-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 600px) { .demos-main { padding: 48px 24px; } }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <a href="/" class="logo">
+      <img src="../empath-icon-v2.png" alt="" class="logo__mark" width="64" height="64">
+      Truesight Data
+    </a>
+    <div class="nav__actions">
+      <a href="/contact" class="nav__cta">Get in touch</a>
+      <a href="/free-data-review" class="nav__cta nav__cta--primary">Get free data review</a>
+    </div>
+  </header>
+
+  <main class="demos-main">
+    <p class="kicker">Live prototypes · Fake data</p>
+    <h1>See what your data could look like.</h1>
+    <p class="sub">These are real, interactive dashboards built on fake data. Click through and imagine it with your actual numbers.</p>
+
+    <div class="demo-grid">
+
+      <div class="demo-card">
+        <div class="demo-card__type">Demo 01</div>
+        <h2>Client Retention Dashboard</h2>
+        <p class="demo-card__question">"Which customers are overdue - and which am I about to lose?"</p>
+        <div class="demo-card__tags">
+          <span class="demo-card__tag">Grooming</span>
+          <span class="demo-card__tag">HVAC</span>
+          <span class="demo-card__tag">Fitness</span>
+          <span class="demo-card__tag">Wellness</span>
+          <span class="demo-card__tag">Home Services</span>
+          <span class="demo-card__tag">Any repeat-visit business</span>
+        </div>
+        <a href="/demos/retention/" class="btn">View Demo →</a>
+      </div>
+
+      <div class="demo-card">
+        <div class="demo-card__type">Demo 02</div>
+        <h2>Job Profitability Tracker</h2>
+        <p class="demo-card__question">"Which work actually makes me money - and which is costing me?"</p>
+        <div class="demo-card__tags">
+          <span class="demo-card__tag">Contractors</span>
+          <span class="demo-card__tag">Moving</span>
+          <span class="demo-card__tag">Photography</span>
+          <span class="demo-card__tag">Agencies</span>
+          <span class="demo-card__tag">Coaches</span>
+          <span class="demo-card__tag">Any project-based business</span>
+        </div>
+        <a href="/demos/profitability/" class="btn">View Demo →</a>
+      </div>
+
+      <div class="demo-card">
+        <div class="demo-card__type">Demo 03</div>
+        <h2>Revenue Mix Dashboard</h2>
+        <p class="demo-card__question">"Where is my money actually coming from - and how is it changing?"</p>
+        <div class="demo-card__tags">
+          <span class="demo-card__tag">Coaches</span>
+          <span class="demo-card__tag">Gyms</span>
+          <span class="demo-card__tag">Agencies</span>
+          <span class="demo-card__tag">Studios</span>
+          <span class="demo-card__tag">Any multi-service business</span>
+        </div>
+        <a href="/demos/revenue-mix/" class="btn">View Demo →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <span>Truesight · Data clarity for growing businesses</span>
+  </footer>
+</body>
+</html>

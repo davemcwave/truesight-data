@@ -9,7 +9,8 @@
       "WebFetch(domain:www.console.com)",
       "WebFetch(domain:www.boobook.world)",
       "WebFetch(domain:onverre.com)",
-      "Read(//c/Users/David Dalisay/empath-interview-prep/**)"
+      "Read(//c/Users/David Dalisay/empath-interview-prep/**)",
+      "WebFetch(domain:docs.stripe.com)"
     ]
   }
 }
